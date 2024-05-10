@@ -3,6 +3,7 @@ package francisco.francisco.fisio.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Entity
@@ -67,19 +68,19 @@ public class Paciente {
     private String prontuario;
 
     @Column(name = "valor_consulta", precision = 10, scale = 2)
-    private Double valorConsulta;
+    private BigDecimal valorConsulta;
 
     @Column(name = "valor_sessao", precision = 10, scale = 2)
-    private Double valorSessao;
+    private BigDecimal valorSessao;
 
     @Column(name = "pagamento", length = 50)
     private String pagamento;
 
     @Column(name = "credito", precision = 10, scale = 2)
-    private Double credito;
+    private BigDecimal credito;
 
     @Column(name = "debito", precision = 10, scale = 2)
-    private Double debito;
+    private BigDecimal debito;
 
     @Column(name = "ativo", nullable = false)
     private Boolean ativo;

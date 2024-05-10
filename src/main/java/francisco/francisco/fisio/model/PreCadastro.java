@@ -26,9 +26,6 @@ public class PreCadastro {
     @Column(name = "plano_de_saude", length = 100)
     private String planoDeSaude;
 
-    @Column(name = "numero_de_sessoes_previstas")
-    private Integer numeroDeSessoesPrevistas;
-
     @Column(name = "rg", unique = true, length = 20)
     private String rg;
 
@@ -50,7 +47,7 @@ public class PreCadastro {
     @Column(name = "consulta_paga", nullable = false)
     private Boolean consultaPaga;
 
-    // Campo para armazenar informações adicionais que podem ser úteis para o profissional
+
     @Column(name = "informacoes_adicionais", columnDefinition = "TEXT")
     private String informacoesAdicionais;
 

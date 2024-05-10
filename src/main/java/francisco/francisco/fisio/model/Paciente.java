@@ -62,7 +62,7 @@ public class Paciente {
     private String tratamento;
 
     @Column(name = "historico_tratamento", columnDefinition = "TEXT")
-    private String historidoTratamento;
+    private String historicoTratamento;
 
     @Column(name = "prontuario", columnDefinition = "TEXT")
     private String prontuario;

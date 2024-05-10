@@ -1,0 +1,19 @@
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 31
+Server version: 10.6.16-MariaDB-0ubuntu0.22.04.1 Ubuntu 22.04
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+Query OK, 0 rows affected (0,025 sec)user'@'localhost' IDENTIFIED by 'dragonight';
+
+MariaDB [(none)]> CREATE DATABASE fisio_db;
+Query OK, 1 row affected (0,002 sec)
+
+MariaDB [(none)]> GRANT ALL PRIVILEGES on fisio_db.* TO 'fisio_user'@'localhost';
+Query OK, 0 rows affected (0,007 sec)
+
+MariaDB [(none)]> FLUSH PRIVILEGES;
+Query OK, 0 rows affected (0,015 sec)
+

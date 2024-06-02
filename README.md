@@ -18,15 +18,11 @@ Para atender às funcionalidades específicas que você mencionou, precisaremos 
     - Histórico do tratamento atual.
     - Histórico total que engloba todos os tratamentos e o histórico pregresso.
 
-### 3. **Controle de Acesso**
-- **Perfis de Usuário**
-    - Perfis distintos para secretarias e profissionais de saúde, cada um com diferentes níveis de acesso e permissões dentro do sistema.
-    - Utilizar Spring Security para implementar essas regras de acesso.
 
-### 4. **Interface de Usuário**
+### 3. **Interface de Usuário**
 - Desenvolver interfaces claras e distintas para a secretaria e profissionais de saúde, facilitando o uso diário e garantindo que apenas informações pertinentes e autorizadas sejam acessíveis por cada perfil.
 
-### 5. **Backend e API**
+### 4. **Backend e API**
 - **Endpoints da API**:
     - `POST /preCadastro` para criar pré-cadastros.
     - `GET /preCadastro/{id}` para visualizar um pré-cadastro específico.
@@ -35,7 +31,7 @@ Para atender às funcionalidades específicas que você mencionou, precisaremos 
     - `POST /pacientes/{id}/sessoes` para registrar uma nova sessão.
     - `PUT /pacientes/{id}/tratamento` para atualizar detalhes do tratamento.
 
-### 6. **Persistência de Dados**
+### 5. **Persistência de Dados**
 - Definir esquemas de banco de dados em MariaDB que suportem todas as operações necessárias, incluindo relações entre tabelas para gerenciar históricos e sessões.
 
 ### 7. **Documentação e Testes**
